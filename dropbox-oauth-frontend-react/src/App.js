@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import axios from 'axios';
+import DropboxConnect from './components/DropboxConnect';
 
-function App() {
+const App = () => {
+  const handleChoose = async (files) => {
+    try {
+      // Save files to database
+      await axios.post('http://localhost:5000/files', { files });
+      console.log('Files saved to DB');
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const handleConnect = () => {
+    window.location.href = 'http://localhost:5000/auth/dropbox';
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <DropboxConnect onChoose={handleChoose} />
+      <button onClick={handleConnect}>Connect to Dropbox</button>
     </div>
   );
-}
+};
 
 export default App;
