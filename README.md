@@ -1,6 +1,6 @@
 # Dropbox-oauth
 ## Below are the steps:
-### 1. go to backend -> index.js file and enter your crendentials like the app id and secret given to you by the dropbox.
+### 1. Go to backend -> index.js file and enter your crendentials like the app id and secret given to you by the dropbox.
 ### 2. Use npm install inside frontend
 ### 3. Use npm install inside backend
 ### 4. Use npm start to start frontend
