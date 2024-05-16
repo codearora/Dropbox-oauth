@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dropbox": "^10.34.0",
+    "express": "^4.19.2",
+    "isomorphic-fetch": "^3.0.0",
+    "sqlite3": "^5.1.7"
+  }
+}
