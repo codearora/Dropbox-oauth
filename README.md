@@ -1,4 +1,5 @@
 # Dropbox-oauth
+### This app consists of Node application for connecting to your Dropbox account and retreiving the files details of your specified folder.
 ## Below are the steps:
 ### 1. Go to backend -> index.js file and enter your crendentials like the app id and secret given to you by the dropbox.
 ### 2. Use npm install inside frontend
